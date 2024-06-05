@@ -288,6 +288,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!54 &530872191 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1205881861435878931, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
+  m_PrefabInstance: {fileID: 4685118713086649352}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +479,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1407619965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7518013494248080566, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
+  m_PrefabInstance: {fileID: 4685118713086649352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1407619969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407619965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18b83e25a3f582c4c84b88b347e2aee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 530872191}
+  yawSpeed: 1
+  target: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  angle: 0
 --- !u!1 &1629218144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1808,25 +1835,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 663098317598126580, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
-      propertyPath: speed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853727007745288969, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853727007745288969, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853727007745288969, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8398530465435401988, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
       propertyPath: m_Name
       value: Necromancer_AI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867919500008118383, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9016935305988348098, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1871,7 +1886,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7518013494248080566, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1407619969}
   m_SourcePrefab: {fileID: 100100000, guid: f0464ec3de848ac49a230708602e7aa2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
