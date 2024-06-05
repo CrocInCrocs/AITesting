@@ -3,13 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NecromancerSteering : MonoBehaviour
+public class Movement : MonoBehaviour
 {
    public Rigidbody bodyModel;
    public float speed;
+   public Vector3 movement;
 
    private void FixedUpdate()
    {
-      bodyModel.AddForce(0f,0,speed);
+      bodyModel.AddRelativeForce(movement);
    }
+   
+   
 }
