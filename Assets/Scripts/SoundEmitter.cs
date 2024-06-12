@@ -5,17 +5,18 @@ using UnityEngine;
 public class SoundEmitter : MonoBehaviour
 {
     public Hearing hearing;
+    public List<GameObject> listeners;
     public float radius;
 
-    public void EmitSound()
+    /*public void EmitSound()
     {
         Physics.OverlapSphere(transform.position, radius);
-        foreach (var soundHeard in hearing)
+        foreach (var soundHeard in listeners)
         {
-            if (GetComponent<Hearing>().HeardSomething(this) == true)
+            if (GetComponent<Hearing>().HeardSomething(listeners ) == true)
             {
             
             }
         }
-    }
+    }*/
 }
