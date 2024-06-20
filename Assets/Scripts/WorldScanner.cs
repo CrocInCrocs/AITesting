@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Pathfinding : MonoBehaviour
+public class WorldScanner : MonoBehaviour
 {
     public Vector3Int size;
     public LayerMask layerMask;
 
     public Node[,] gridOfObstacles;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         gridOfObstacles = new Node[size.x,size.z];
     }
@@ -29,7 +30,7 @@ public class Pathfinding : MonoBehaviour
             {
                 gridOfObstacles[x, z] = new Node();
                 if (Physics.CheckBox(new Vector3(x, 0, z),
-                        new Vector3(0.5f, 10f, 0.5f), Quaternion.identity))
+                        new Vector3(0.5f, 10f, 0.5f), Quaternion.identity, layerMask))
                 {
 // Something is there
                     gridOfObstacles[x, z].isBlocked = true;
@@ -56,6 +57,7 @@ public class Pathfinding : MonoBehaviour
                     Gizmos.color = Color.green;
                 }
                 Gizmos.DrawCube(new Vector3(x, 0, z), Vector3.one);
+                
             }
         }
     }

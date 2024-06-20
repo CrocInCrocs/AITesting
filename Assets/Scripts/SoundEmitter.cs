@@ -13,7 +13,7 @@ public class SoundEmitter : MonoBehaviour
         Physics.OverlapSphere(transform.position, radius);
         foreach (var soundHeard in listeners)
         {
-            if (GetComponent<Hearing>().HeardSomething(listeners ) == true)
+            if (GetComponent<Hearing>().HeardSomething(hearing.soundHeard) == true)
             {
             
             }
