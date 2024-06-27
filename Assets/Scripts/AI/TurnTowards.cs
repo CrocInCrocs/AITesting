@@ -24,11 +24,11 @@ public class TurnTowards : MonoBehaviour
             targetDir = targetPosition - transform.position;
         }
         angle = Vector3.SignedAngle(transform.forward, targetDir, Vector3.up);
-        body.AddRelativeTorque(0,yawSpeed/angle ,0);
+        body.AddRelativeTorque(0,yawSpeed*angle ,0);
 
         if (transform.rotation.y == targetDir.y)
         {
-             yawSpeed -= 1;
+             //yawSpeed -= 1;
         }
         
     }

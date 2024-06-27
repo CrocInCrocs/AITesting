@@ -368,7 +368,7 @@ Transform:
   m_GameObject: {fileID: 242876713}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.696172, z: -0, w: 0.71787506}
-  m_LocalPosition: {x: 50.15441, y: 24.778807, z: -11.150423}
+  m_LocalPosition: {x: 50.15441, y: 25.17, z: -11.74}
   m_LocalScale: {x: 1, y: 1.8634864, z: 4.995163}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -723,6 +723,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1
+  fill: {fileID: 469548527}
 --- !u!4 &469548526
 Transform:
   m_ObjectHideFlags: 0
@@ -753,8 +754,11 @@ MonoBehaviour:
   currentPosition: {x: 1, y: 0, z: 1}
   currentNode:
     isBlocked: 0
+    x: 0
+    z: 0
   open: []
   closed: []
+  waitTime: 0.01
   worldScanner: {fileID: 469548525}
 --- !u!1 &477102635
 GameObject:

@@ -6,5 +6,7 @@ using UnityEngine;
 public class Node
 {
     public bool isBlocked;
-    
+    public int x;
+    public int z;
+
 }
