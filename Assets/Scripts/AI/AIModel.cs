@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NecromancerModel : MonoBehaviour
+public class AIModel : MonoBehaviour
 {
-    public NecromancerScript necromancer;
+    public AIBase necromancer;
     public int army;
 
     public bool HasSoldier()
