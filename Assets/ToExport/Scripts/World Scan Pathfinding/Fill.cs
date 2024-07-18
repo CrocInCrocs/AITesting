@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fill : MonoBehaviour
+namespace EthanMoody
+{
+    public class Fill : MonoBehaviour
 {
     public Vector3Int currentPosition;
     public Node currentNode;
@@ -58,3 +60,5 @@ public class Fill : MonoBehaviour
         }
     }
 }
+}
+
